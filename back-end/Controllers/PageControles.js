@@ -1,14 +1,35 @@
 const mongoose = require("mongoose");
 const User = require("../Models/Store");
 
-const addData = async (req, res) => {
-  const file = req.file.image;
-  if (!file) {
-    return res.status(400).json("Insert Image File.");
+const handleErrors = (err) => {
+  const errors = {
+    image: "",
+    description: "",
+    title: "",
+    link: "",
+    usedTech: "",
+  };
+  if (err.code === 11000) {
+    errors.error = "File Is Already Exists";
+    return errors;
   }
+  if (err.message.includes("Profile validation failed")) {
+    Object.values(err.errors).forEach(({ porperties }) => {
+      errors[porperties.path] = porperties.message;
+    });
+  }
+};
+const addData = async (req, res) => {
+  // const image = req.file.filename;
+  // console.log(image);
+  // console.log({...req.body})
+  // if (!image) {
+  //   return res.status(400).json("Insert Image File.");
+  // }
+  console.log(req.body)
   try {
     const user = await User.create({
-      image: file,
+      // image,
       ...req.body,
     });
     res.status(200).send(user);

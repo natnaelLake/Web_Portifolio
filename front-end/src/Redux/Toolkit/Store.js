@@ -1,16 +1,16 @@
 import React from 'react'
-import {configureStore} from '@reduxjs/toolkit'
+import {configureStore, getDefaultMiddleware} from '@reduxjs/toolkit'
 import createSagaMiddleware from 'redux-saga'
-
-
+import { rootSaga } from '../Saga/ProfileSaga';
+import ProfileSlice from './ProfileSlice';
 const sagaMiddleware = createSagaMiddleware();
 
 
-export default Store = configureStore({
+export const Store = configureStore({
     reducer:{
-
+        profile:ProfileSlice
     },
-    middleware:[sagaMiddleware]
+    middleware:(getDefaultMiddleware)=>getDefaultMiddleware({serializableCheck: false,thunk:false}).concat(sagaMiddleware)
 });
 
-sagaMiddleware.run();
+sagaMiddleware.run(rootSaga);

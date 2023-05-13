@@ -1,10 +1,10 @@
 const mongoose = require('mongoose')
 
 const userData = mongoose.Schema({
-    image:{
-        type:String,
-        required:[true,'Insert Image File.']
-    },
+    // image:{
+    //     type:String,
+    //     required:[true,'Insert Image File.']
+    // },
     description:{
         type:String,
         required:[true,'Description Is required.']
@@ -17,9 +17,9 @@ const userData = mongoose.Schema({
         type:String,
     },
     usedTech:{
-        type:String,
+        type:[String],
         required:[true,'Please Insert The Tech.']
     }
 },{timestamps:true})
 
-module.exports = mongoose.model('User',userData);
+module.exports = mongoose.model('Profile',userData);
