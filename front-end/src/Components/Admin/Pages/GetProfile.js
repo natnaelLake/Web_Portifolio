@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { GET_DATA } from "../../Redux/Saga/Types/ActionTypes";
+import { GET_DATA } from "../../../Redux/Saga/Types/ActionTypes";
 
 export default function GetProfile() {
   const data = useSelector((state) => state.profile.profileData);

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { ADD_DATA } from "../../Redux/Saga/Types/ActionTypes";
+import { ADD_DATA } from "../../../Redux/Saga/Types/ActionTypes";
 
 export default function AddProfile() {
   const [title, setTitle] = useState("");
