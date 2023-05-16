@@ -8,8 +8,9 @@ export default function GetProfile() {
   useEffect(() => {
     dispatch({ type: GET_DATA });
   }, []);
-
-  console.log(data);
-  return;
-  <div>{JSON.stringify(data)}</div>;
+  return(
+    <div>
+      {JSON.stringify(data)}
+    </div>
+  )
 }

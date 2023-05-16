@@ -16,7 +16,7 @@ export const  ProfileSlice = createSlice({
             state.profileData = action.payload
         },
         updateProfile:(state,action)=>{
-            state.profileData =state.profileData.map((update)=>{update._id === action.payload._id ? action.payload : update})
+            // state.profileData =state.profileData.map((update)=>{update._id === action.payload._id ? action.payload : update})
         },
         deleteProfile:{},
     }
