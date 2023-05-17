@@ -21,11 +21,11 @@ function App() {
       <Header/>
       <UserDisplayScreen/>
       <ProfileData/>
+      {/* <ProfileData/>
       <ProfileData/>
       <ProfileData/>
       <ProfileData/>
-      <ProfileData/>
-      <ProfileData/>
+      <ProfileData/> */}
 
     </Container>
   );

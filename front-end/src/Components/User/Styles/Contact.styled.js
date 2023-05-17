@@ -1,8 +1,6 @@
 import styled from "@emotion/styled";
 
 export const ContactCard = styled.div`
-  /* width: 100vw; */
-  /* height: 100vh; */
   display: grid;
   place-items: center;
   background-color: aliceblue;
@@ -17,11 +15,8 @@ export const ContactCard = styled.div`
     grid-template-columns: 1fr;
     width: 100%;
     height: auto;
-    /* display: none; */
     flex-direction: column;
-    overflow-y: scroll;
     height: 100vh;
-  /* margin-bottom: 720px; */
 
   }
 `;
@@ -39,10 +34,7 @@ export const Description = styled.div`
   flex-direction: column;
   gap: 4em;
   padding: 0 3em;
-  /* width: minmax(80px, 80%); */
   display: flex;
-  /* flex-direction: column; */
-  /* gap: .75em; */
   @media screen and (max-width: 768px) {
     gap: 2em;
     padding: 0 2em;
@@ -56,16 +48,6 @@ export const Name = styled.div`
   white-space: nowrap;
   color: transparent;
   -webkit-text-stroke: 1px #222222;
-  /* &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 10%;
-    height: 5%;
-
-    background: black;
-  } */
   @media screen and (max-width: 768px) {
     content: "";
     position: relative;
@@ -81,11 +63,8 @@ export const Content = styled.div`
   color: #404040;
 `;
 export const ListHolder = styled.ul`
-  /* margin-left: %; */
   @media screen and (max-width: 768px) {
-    /* margin-left: -25%; */
     padding: 0;
-    /* margin-bottom: 5%; */
     width: 100%;
   }
 `;
@@ -130,7 +109,6 @@ export const ImageContainer = styled.div`
   margin-top: 220px;
   margin-bottom: 410px;
   clip-path: none;
-    /* display: flex; */
   }
 `;
 export const Image = styled.img`

@@ -1,7 +1,9 @@
 import styled from "@emotion/styled";
 
 export const Container  = styled.div`
-    align-items: center;
+    /* align-items: center; */
     display: flex;
-    flex-direction: column-reverse;
+    overflow-y: scroll;
+    flex-direction: column;
+    height: 100vh;
 `
