@@ -1,16 +1,6 @@
 import styled from "@emotion/styled";
 
 export const CardContainer = styled.div`
-  /* background: url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1776&q=80);
-  background-size: cover;
-  background-position: right;
-  background-attachment: fixed;
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Playfair Display", serif;
-  } */
 `;
 export const ContainerOne = styled.div`
   @media (min-width: 950px) {
@@ -29,17 +19,33 @@ export const CyanCard = styled.div`
   border-top: 3px solid hsl(180, 62%, 55%);
   p {
     color: hsl(229, 6%, 66%);
+    margin-bottom: 10px;
   }
   h2 {
     color: hsl(234, 12%, 34%);
     font-weight: 600;
   }
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    border-radius: 7px;
+    &:hover{
+    background-color: white;
+    color: black;
+  }
+  }
+  li {
+    margin-bottom: 5px;
+  }
   @media (max-width: 450px) {
-    height: 200px;
+    height: max-content;
+
   }
   @media (max-width: 950px) and (min-width: 450px) {
     text-align: center;
-    height: 180px;
+    height: max-content;
+
   }
   @media (min-width: 950px) {
     position: relative;
@@ -57,17 +63,34 @@ export const RedCard = styled.div`
 
   p {
     color: hsl(229, 6%, 66%);
+    margin-bottom: 10px;
+
   }
   h2 {
     color: hsl(234, 12%, 34%);
     font-weight: 600;
   }
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    border-radius: 7px;
+    &:hover{
+    background-color: white;
+    color: black;
+  }
+  }
+  li {
+    margin-bottom: 5px;
+  }
   @media (max-width: 450px) {
-    height: 200px;
+    height: max-content;
+
   }
   @media (max-width: 950px) and (min-width: 450px) {
     text-align: center;
-    height: 180px;
+    height: max-content;
+
   }
   @media (min-width: 950px) {
     width: 20%;
@@ -83,17 +106,32 @@ export const BlueCard = styled.div`
   margin: 20px;
   p {
     color: hsl(229, 6%, 66%);
+    margin-bottom: 10px;
+
   }
   h2 {
     color: hsl(234, 12%, 34%);
     font-weight: 600;
   }
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    border-radius: 7px;
+    &:hover{
+    background-color: white;
+    color: black;
+  }
+  }
+  li {
+    margin-bottom: 5px;
+  }
   @media (max-width: 450px) {
-    height: 200px;
+    height: max-content;
   }
   @media (max-width: 950px) and (min-width: 450px) {
     text-align: center;
-    height: 180px;
+    height: max-content;
   }
   @media (min-width: 950px) {
     position: relative;
@@ -102,29 +140,53 @@ export const BlueCard = styled.div`
   }
 `;
 export const OrangeCard = styled.div`
+  margin-top: 100px;
   border-radius: 5px;
   box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
   padding: 30px;
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
   background-color: white;
   border-top: 3px solid hsl(34, 97%, 64%);
 
   p {
     color: hsl(229, 6%, 66%);
+    margin-bottom: 10px;
+
   }
   h2 {
     color: hsl(234, 12%, 34%);
     font-weight: 600;
   }
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    border-radius: 7px;
+    &:hover{
+    background-color: white;
+    color: black;
+  }
+  }
+  li {
+    margin-bottom: 5px;
+  }
   @media (max-width: 450px) {
-    height: 200px;
+    height: max-content;
+    margin: 20px;
+
   }
   @media (max-width: 950px) and (min-width: 450px) {
     text-align: center;
-    height: 180px;
+    height: max-content;
+  margin: 20px;
+
   }
   @media (min-width: 950px) {
     width: 20%;
+  margin: 20px;
   }
 `;
 export const ContainerTwo = styled.div`
@@ -183,6 +245,20 @@ export const CardText = styled.div`
   padding: 20px;
   p {
     font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: grey;
+    border-radius: 7px;
+    &:hover{
+    background-color: white;
+    color: black;
+  }
+  }
+  li {
+    margin-bottom: 5px;
   }
 `;
 export const P1 = styled.p`
@@ -193,14 +269,21 @@ export const CardTitle = styled.h2`
   margin-bottom: 20px;
   margin-top: 5px;
 `;
-export const CardPrice = styled.div`
+export const CardPrice = styled.button`
   width: 100px;
-  height: 100px;
-  background-color: #970c0a;
+  height: 50px;
+  background-color: palevioletred;
   color: #fff;
   margin-left: auto;
   font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-color:white;
+  border-radius: 50px;
+  cursor: pointer;
+  &:hover{
+    background-color: white;
+    color: black;
+  }
 `;

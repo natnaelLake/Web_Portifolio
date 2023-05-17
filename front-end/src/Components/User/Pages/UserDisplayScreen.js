@@ -1,8 +1,7 @@
 import React from "react";
 import Contact from "./Contact";
 import Resume from "./Resume";
-import {  CardList, ContactBody, MainBody } from "../Styles/UserDesplay.styled";
-import ProfileData from "./ProfileData";
+import {   ContactBody, MainBody } from "../Styles/UserDesplay.styled";
 
 export default function UserDisplayScreen() {
   return (

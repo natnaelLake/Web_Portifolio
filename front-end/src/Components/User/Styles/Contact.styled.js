@@ -8,17 +8,13 @@ export const ContactCard = styled.div`
   grid-template-columns: 6fr 4fr;
   width: 90%;
   height: fit-content;
-
   background: hsl(0, 0%, 95%);
   box-shadow: 1px 1px 25px 3px rgba(0, 0, 0, 0.3);
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     width: 100%;
-    /* height: auto; */
     flex-direction: column;
     height: max-content;
-
-
   }
 `;
 export const ContactInfo = styled.div`
@@ -42,10 +38,22 @@ export const Description = styled.div`
     width: 100%;
   }
 `;
+export const SocilaMedia = styled.div`
+  display: flex;
+  flex-direction: row;
+  li {
+    margin: 15px 15px 5px 5px;
+    list-style-type: none;
+    a {
+      text-decoration: none;
+      text-decoration-color: none;
+      color: blue;
+    }
+  }
+`;
 export const Name = styled.div`
   width: 70%;
   font-size: 2.875rem;
-
   white-space: nowrap;
   color: transparent;
   -webkit-text-stroke: 1px #222222;
@@ -106,10 +114,10 @@ export const ImageContainer = styled.div`
   object-fit: cover;
   @media screen and (max-width: 768px) {
     width: 70%;
-  object-fit: cover;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  clip-path: none;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    clip-path: none;
   }
 `;
 export const Image = styled.img`

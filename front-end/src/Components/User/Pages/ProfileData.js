@@ -1,6 +1,4 @@
 import React from "react";
-import "./styl.css";
-import ProfileImage from "../../../assets/photo_2023-04-26_19-15-45.jpg";
 import {
   BlueCard,
   Card,
@@ -25,10 +23,26 @@ export default function ProfileData() {
         <CyanCard>
           <h2>Supervisor</h2>
           <p>Monitors activity to identify project roadblocks</p>
+          <br />
+          <br />
+
           <img
             src="https://assets.codepen.io/2301174/icon-supervisor.svg"
             alt=""
           />
+          <br />
+          <br />
+          <P1>Used Technologies</P1>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <CardPrice class="card-price">View</CardPrice>
         </CyanCard>
 
         <RedCard>
@@ -36,10 +50,27 @@ export default function ProfileData() {
           <p>
             Scans our talent network to create the optimal team for your project
           </p>
+          <br />
+          <br />
+
           <img
             src="https://assets.codepen.io/2301174/icon-team-builder.svg"
             alt=""
           />
+          <br />
+          <br />
+
+          <P1>Used Technologies</P1>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <CardPrice class="card-price">View</CardPrice>
         </RedCard>
 
         <BlueCard>
@@ -47,17 +78,50 @@ export default function ProfileData() {
           <p>
             Uses data from past projects to provide better delivery estimates
           </p>
+          <br />
+          <br />
+
           <img
             src="https://assets.codepen.io/2301174/icon-calculator.svg"
             alt=" "
           />
+          <br />
+          <br />
+
+          <P1>Used Technologies</P1>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <CardPrice class="card-price">View</CardPrice>
         </BlueCard>
       </ContainerOne>
       <ContainerTwo>
         <OrangeCard>
           <h2>Karma</h2>
           <p>Regularly evaluates our talent to ensure quality</p>
+          <br />
+          <br />
           <img src="https://assets.codepen.io/2301174/icon-karma.svg" alt="" />
+          <br />
+          <br />
+
+          <P1>Used Technologies</P1>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <li>
+            <a href="#">Link</a>
+          </li>
+          <CardPrice class="card-price">View</CardPrice>
         </OrangeCard>
       </ContainerTwo>
       <CardHeader id="header">
@@ -76,8 +140,20 @@ export default function ProfileData() {
               Eggs Benedict with hollandaise sauce, crispy bacon and an
               assortment of garden herbs.
             </p>
+            <br />
+
+            <P1>Used Technologies</P1>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
           </CardText>
-          <CardPrice class="card-price">$56</CardPrice>
+          <CardPrice class="card-price">View</CardPrice>
         </Card>
         <Card class="card">
           <CardImage class="card-image">
@@ -90,8 +166,20 @@ export default function ProfileData() {
               A beef burger with wholewheat patty, juicy lettuce and a side of
               gluten free fries
             </p>
+            <br />
+
+            <P1>Used Technologies</P1>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
           </CardText>
-          <CardPrice class="card-price">$39</CardPrice>
+          <CardPrice class="card-price">View</CardPrice>
         </Card>
         <Card class="card">
           <CardImage class="card-image">
@@ -104,8 +192,20 @@ export default function ProfileData() {
               The traditional French soup made with onions and beef with a
               dollop of garlic and saffaron mayonise.
             </p>
+            <br />
+
+            <P1>Used Technologies</P1>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
           </CardText>
-          <CardPrice class="card-price">$69</CardPrice>
+          <CardPrice class="card-price">View</CardPrice>
         </Card>
         <Card class="card">
           <CardImage class="card-image">
@@ -117,8 +217,44 @@ export default function ProfileData() {
             <p class="card-body">
               Chickens doused in wine, mushrooms, pork, onions and garlic.
             </p>
+            <br />
+
+            <P1>Used Technologies</P1>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
           </CardText>
-          <CardPrice class="card-price">$104</CardPrice>
+          <CardPrice class="card-price">View</CardPrice>
+        </Card>
+        <Card class="card">
+          <CardImage class="card-image">
+            <img src="https://images.unsplash.com/photo-1635146037526-a75e6905ad78?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80" />
+          </CardImage>
+          <CardText class="card-text">
+            <P1 class="card-meal-type">Appetizers/Meat</P1>
+            <h2 class="card-title">Coq au Vin</h2>
+            <p class="card-body">
+              Chickens doused in wine, mushrooms, pork, onions and garlic.
+            </p>
+            <br />
+            <P1>Used Technologies</P1>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+          </CardText>
+          <CardPrice class="card-price">View</CardPrice>
         </Card>
       </CardListContainer>
     </CardContainer>
