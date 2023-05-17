@@ -7,16 +7,17 @@ export const ContactCard = styled.div`
   display: grid;
   grid-template-columns: 6fr 4fr;
   width: 90%;
-  height: 100%;
+  height: fit-content;
 
   background: hsl(0, 0%, 95%);
   box-shadow: 1px 1px 25px 3px rgba(0, 0, 0, 0.3);
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     width: 100%;
-    height: auto;
+    /* height: auto; */
     flex-direction: column;
-    height: 100vh;
+    height: max-content;
+
 
   }
 `;
@@ -106,8 +107,8 @@ export const ImageContainer = styled.div`
   @media screen and (max-width: 768px) {
     width: 70%;
   object-fit: cover;
-  margin-top: 220px;
-  margin-bottom: 410px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   clip-path: none;
   }
 `;
@@ -115,5 +116,5 @@ export const Image = styled.img`
   margin-top: 25px;
   height: 100%;
   width: 100%;
-  margin-left: 50px;
+  margin-left: 20px;
 `;

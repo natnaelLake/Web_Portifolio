@@ -14,6 +14,7 @@ import {Container} from './Components/User/Styles/Container.styled'
 import Header from "./Components/User/Pages/Header";
 import UserDisplayScreen from "./Components/User/Pages/UserDisplayScreen";
 import ProfileData from "./Components/User/Pages/ProfileData";
+import {Route} from 'react-router-dom'
 function App() {
   
   return (

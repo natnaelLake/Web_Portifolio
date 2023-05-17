@@ -3,10 +3,13 @@ import styled from "@emotion/styled";
 export const ContactBody = styled.div`
   display: flex;
   justify-content: space-between;
-  overflow-y: scroll;
+  margin-left: 45px;
+  /* overflow-y: scroll; */
   @media screen and (max-width:768px){
+    height: max-content;
     flex-direction:column-reverse;
-    overflow-y: scroll;
+    align-items: center;
+    margin:20px;
   }
 `;
 export const MainBody = styled.div`

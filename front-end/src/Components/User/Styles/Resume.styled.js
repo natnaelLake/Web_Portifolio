@@ -1,27 +1,31 @@
 import styled from "styled-components";
 
-
-
-export const ResumeButton  = styled.button`
-/* display: block; */
-     background: ${props => props.$primary ? "white" : "palevioletred"};
-  color: ${props => props.$primary ? "palevioletred" : "white"};
-
+export const ResumeButton = styled.button`
+  /* display: block; */
+  background: palevioletred;
+  width: max-content;
   font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
   border: 2px solid palevioletred;
-  border-radius: 3px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+
   height: 60px;
   /* width: fit-content; */
-  margin-left: 200px;
-  &:hover{
-    background: ${props => props.$primary ? "palevioletred" : "white"};
-  color: ${props => props.$primary ? "white" : "palevioletred"};
+  a {
+    color: white;
   }
-  @media screen and (max-width:768px){
+  margin-left: 200px;
+  &:hover {
+    background: black;
+    border: 2px solid black;
+
+    color: white ;
+  }
+  @media screen and (max-width: 768px) {
     width: 100%;
     padding-left: 0;
     margin-left: 0;
   }
-`
+`;
