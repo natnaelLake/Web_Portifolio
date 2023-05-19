@@ -68,7 +68,7 @@ export default function Contact() {
                     </a>
                   </li>
                   <li>
-                    <a href="" target="_blanck">
+                    <a href="https://twitter.com/BewuketuNat" target="_blanck">
                       <AiFillTwitterCircle />
                     </a>
                   </li>
