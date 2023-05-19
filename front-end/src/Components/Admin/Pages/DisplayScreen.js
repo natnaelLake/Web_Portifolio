@@ -13,16 +13,7 @@ import ResumeControl from "./ResumeControl";
 export default function DisplayScreen() {
   return (
     <>
-    <Header/>
-    {/* <AddProfile /> */}
-    {/* <GetProfile /> */}
-      {/* <GetProfile />
-      <DeleteProfile />
-      <UpdateProfile /> */}
-      {/* <DashBoard/> */}
-      {/* <Login/> */}
-      <ResumeControl/>
-      <SideBar/>
+      <DashBoard/>
     </>
   );
 }
