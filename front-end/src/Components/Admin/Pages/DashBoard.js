@@ -1,80 +1,74 @@
 import React from "react";
 import "./DsStyle.css";
+import { Card, CardDescr, CardTitle, DashContainer, List, ListHolder } from "../Styles/Dashboard.styled";
 
 export default function DashBoard() {
   return (
-    <div>
+    <DashContainer>
       <h1>Data Dashboard</h1>
-      <ol>
-        <li>
-          <div class="icon">
+      <ListHolder>
+        <List>
+          <Card class="icon">
             <i class="fa-solid fa-bicycle"></i>
-          </div>
-          <div class="title">Step 1</div>
-          <div class="descr">
+          </Card>
+          <CardTitle class="title">Step 1</CardTitle>
+          <CardDescr class="descr">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis,
             porro.
-          </div>
-        </li>
-        <li>
-          <div class="icon">
+          </CardDescr>
+        </List>
+        <List>
+          <Card class="icon">
             <i class="fa-solid fa-car"></i>
-          </div>
-          <div class="title">Step 2</div>
-          <div class="descr">
+          </Card>
+          <CardTitle class="title">Step 2</CardTitle>
+          <CardDescr class="descr">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis,
             porro.
-          </div>
-        </li>
-        <li>
-          <div class="icon">
+          </CardDescr>
+        </List>
+        <List>
+          <Card class="icon">
             <i class="fa-solid fa-helicopter"></i>
-          </div>
-          <div class="title">Step 3</div>
-          <div class="descr">
+          </Card>
+          <CardTitle class="title">Step 3</CardTitle>
+          <CardDescr class="descr">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis,
             porro.
-          </div>
-        </li>
-        <li>
-          <div class="icon">
+          </CardDescr>
+        </List>
+        <List>
+          <Card class="icon">
             <i class="fa-solid fa-plane"></i>
-          </div>
-          <div class="title">Step 4</div>
-          <div class="descr">
+          </Card>
+          <CardTitle class="title">Step 4</CardTitle>
+          <CardDescr class="descr">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis,
             porro.
-          </div>
-        </li>
-        <li>
-          <div class="icon">
+          </CardDescr>
+        </List>
+        <List>
+          <Card class="icon">
             <i class="fa-solid fa-rocket"></i>
-          </div>
-          <div class="title">Step 5</div>
-          <div class="descr">
+          </Card>
+          <CardTitle class="title">Step 5</CardTitle>
+          <CardDescr class="descr">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis,
             porro.
-          </div>
-        </li>
-        <li>
-          <div class="icon">
+          </CardDescr>
+        </List>
+        <List>
+          <Card class="icon">
             <i class="fa-solid fa-bus"></i>
-          </div>
-          <div class="title">Step 6</div>
-          <div class="descr">
+          </Card>
+          <CardTitle class="title">Step 6</CardTitle>
+          <CardDescr class="descr">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis,
             porro.
-          </div>
-        </li>
-      </ol>
-      <div class="credits">
-        <a
-          target="_blank"
-          href="https://www.freepik.com/premium-vector/vector-infographic-design-template-with-icons-8-options-steps_10571883.htm"
-        >
-          inspired by
-        </a>
-      </div>
-    </div>
+          </CardDescr>
+        </List>
+      </ListHolder>
+      
+    </DashContainer>
   );
 }

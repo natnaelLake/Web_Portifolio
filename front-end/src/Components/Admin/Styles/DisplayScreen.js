@@ -111,7 +111,9 @@ export const Resume =styled.div`
 `
 
 export const UploadButton = styled.button`
+    font-size: 25px;
     width:150px;
+    height: 80px;
     margin: auto;
     margin-left: 80px;
     border-radius: 10px;
