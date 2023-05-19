@@ -1,11 +1,10 @@
 import React from "react";
-import './DsStyle.css'
-
+import "./DsStyle.css";
 
 export default function DashBoard() {
   return (
     <div>
-      <h1>OL circle cards</h1>
+      <h1>Data Dashboard</h1>
       <ol>
         <li>
           <div class="icon">

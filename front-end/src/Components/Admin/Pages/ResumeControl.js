@@ -1,25 +1,24 @@
 import React from "react";
-import './resume.css'
-import { MuiFileInput } from 'mui-file-input'
-import {Button} from '@mui/material'
+import { MuiFileInput } from "mui-file-input";
+import { Resume, UploadButton } from "../Styles/DisplayScreen";
 export default function ResumeControl() {
-  const [file, setFile] = React.useState(null)
+  const [file, setFile] = React.useState(null);
 
   const handleChange = (newFile) => {
-    setFile(newFile)
-  }
+    setFile(newFile);
+  };
   return (
-    <div>
+    <Resume>
       <MuiFileInput value={file} onChange={handleChange} />
       <br />
       <br />
       <br />
-      
-      <Button variant = 'contained'>Change</Button>
+
+      <UploadButton >Change</UploadButton>
       <br />
       <br />
       <br />
-      <Button variant = 'contained'>Delete</Button>
-    </div>
+      <UploadButton $delete>Delete</UploadButton>
+    </Resume>
   );
 }

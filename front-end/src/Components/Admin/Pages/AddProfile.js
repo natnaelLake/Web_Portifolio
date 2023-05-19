@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ADD_DATA } from "../../../Redux/Saga/Types/ActionTypes";
-import './login.css'
-
+import { AddButton, AddContainer, AddForm, AddInput, BackDiv, Shape1, Shape2 } from "../Styles/DisplayScreen";
 
 export default function AddProfile() {
   const [title, setTitle] = useState("");
@@ -38,74 +37,14 @@ export default function AddProfile() {
   };
 
   return (
-    <div>
-      {/* <form>
-        <input
-          type="text"
-          name=""
-          id=""
-          placeholder="title"
-          value={title}
-          onChange={(e) => {
-            setTitle(e.target.value);
-          }}
-        />
-        <br />
-        <input
-          type="text"
-          name=""
-          id=""
-          placeholder="description"
-          value={description}
-          onChange={(e) => {
-            setDescription(e.target.value);
-          }}
-        />
-        <br />
-        <input
-          type="text"
-          name=""
-          id=""
-          placeholder="Link"
-          value={link}
-          onChange={(e) => {
-            setLink(e.target.value);
-          }}
-        />
-        <br />
-        <input
-          type="text"
-          name=""
-          id=""
-          placeholder="Technologies"
-          value={controller}
-          onChange={(e) => {
-            setController(e.target.value);
-          }}
-        />
-        <br />
-        <button onClick={(e) => handleTech(e)}>Add Other</button>
-        <input
-          type="submit"
-          name=""
-          id=""
-          value="Submit"
-          onClick={(e) => {
-            handleSubmit(e);
-          }}
-        />
-
-      </form> */}
-      <div class="background">
-        <div class="shape"></div>
-        <div class="shape"></div>
-      </div>
-      <form>
+    <AddContainer style={{marginTop:'550px'}}>
+      <BackDiv >
+        <Shape1 ></Shape1>
+        <Shape2 ></Shape2>
+      </BackDiv>
+      <AddForm>
         <h3>Add Your Data</h3>
-{/* 
-        <label for="username">Username</label>
-        <input type="text" placeholder="Email or Phone" id="username" /> */}
-        <input
+        <AddInput
           type="text"
           name=""
           id="username"
@@ -114,10 +53,9 @@ export default function AddProfile() {
           onChange={(e) => {
             setTitle(e.target.value);
           }}
-          
         />
         <br />
-        <input
+        <AddInput
           type="text"
           name=""
           id="username"
@@ -128,7 +66,7 @@ export default function AddProfile() {
           }}
         />
         <br />
-        <input
+        <AddInput
           type="text"
           name=""
           id="username"
@@ -139,7 +77,7 @@ export default function AddProfile() {
           }}
         />
         <br />
-        <input
+        <AddInput
           type="text"
           name=""
           id="username"
@@ -149,8 +87,8 @@ export default function AddProfile() {
             setController(e.target.value);
           }}
         />
-        <button onClick={(e) => handleTech(e)}>Add Other</button>
-        <button
+        <AddButton onClick={(e) => handleTech(e)}>Add Other</AddButton>
+        <AddButton
           type="submit"
           name=""
           id=""
@@ -158,20 +96,10 @@ export default function AddProfile() {
           onClick={(e) => {
             handleSubmit(e);
           }}
-        >Submit</button>
-        {/* <label for="password">Password</label>
-        <input type="password" placeholder="Password" id="password" />
-
-        <button>Log In</button> */}
-        {/* <div class="social">
-          <div class="go">
-            <i class="fab fa-google"></i> Google
-          </div>
-          <div class="fb">
-            <i class="fab fa-facebook"></i> Facebook
-          </div>
-        </div> */}
-      </form>
-    </div>
+        >
+          Submit
+        </AddButton>
+      </AddForm>
+    </AddContainer >
   );
 }

@@ -1,16 +1,16 @@
 import React from "react";
-import "./header.css";
+import { NavBar, NavContianer, Navs } from "../Styles/Header.style";
 export default function Header() {
   return (
-    <div>
-      <ul className="menu-bar">
-        <li>Watch Now</li>
-        <li>Movies</li>
-        <li>TV Shows</li>
-        <li>Sports</li>
-        <li>Kids</li>
-        <li>Library</li>
-      </ul>
-    </div>
+    <NavContianer>
+      <NavBar className="menu-bar">
+        <Navs>Watch Now</Navs>
+        <Navs>Movies</Navs>
+        <Navs>TV Shows</Navs>
+        <Navs>Sports</Navs>
+        <Navs>Kids</Navs>
+        <Navs>Library</Navs>
+      </NavBar>
+    </NavContianer>
   );
 }

@@ -1,4 +1,4 @@
-.fa-2x {
+/* .fa-2x {
 font-size: 2em;
 }
 .fa {
@@ -9,7 +9,7 @@ height: 36px;
 text-align: center;
 vertical-align: middle;
 font-size:20px;
-}
+} */
 
 .main-menu:hover,nav.main-menu.expanded {
 width:250px;
@@ -68,11 +68,7 @@ font-size:18px;
 }
 
 .main-menu .nav-text {
-position:relative;
-display:table-cell;
-vertical-align:middle;
-width:190px;
-  font-family: 'Titillium Web', sans-serif;
+  font-size: 2em;
 }
 
 .main-menu>ul.logout {

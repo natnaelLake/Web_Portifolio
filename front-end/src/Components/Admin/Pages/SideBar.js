@@ -1,51 +1,61 @@
 import React from "react";
-import "./sty.css";
 import {RxDashboard} from 'react-icons/rx'
+import { ButtonLink, Icon, Logout, MainMenu,MenuList,MenuListHolder, NavText } from "../Styles/SideBar.style";
 export default function SideBar() {
   return (
     <div>
-          <nav class="main-menu">
-            <ul>
-              <li>
-                <a href="/dashboard">
-                  <i class="fa fa-tachometer fa-2x"></i>
-                  <span class="nav-text">Dashboard</span>
-                </a>
-              </li>
-              <li>
-                <a href="/addProfile">
-                  <i class="fa fa-plus fa-2x"></i>
-                  <span class="nav-text">Add Profile Data</span>
-                </a>
-              </li>
-              <li class="has-subnav">
-                <a href="/editProfile">
-                  <i class="fa fa-edit fa-2x"></i>
-                  <span class="nav-text">Update Profile Data</span>
-                </a>
-              </li>
+          <MainMenu >
+            <MenuListHolder>
+              <MenuList>
+                <ButtonLink href="/dashboard">
+                  <Icon>
+                  <i class="fa fa-tachometer"></i>
+                  </Icon>
+                  <NavText>Dashboard</NavText>
+                </ButtonLink>
+              </MenuList>
+              <MenuList>
+                <ButtonLink href="/addProfile">
+                  <Icon>
+                  <i class="fa fa-plus "></i>
+                  </Icon>
+                  <NavText class="nav-text">Add Profile Data</NavText>
+                </ButtonLink>
+              </MenuList>
+              <MenuList class="has-subnav">
+                <ButtonLink href="/editProfile">
+                 <Icon>
+                 <i class="fa fa-edit"></i>
+                 </Icon>
+                  <NavText class="nav-text">Update Profile Data</NavText>
+                </ButtonLink>
+              </MenuList>
               {/* <li class="has-subnav">
                 <a href="#">
                   <i class="fa fa-trash-o fa-2x"></i>
-                  <span class="nav-text">Delete Profile Data</span>
+                  <NavText class="nav-text">Delete Profile Data</NavText>
                 </a>
               </li> */}
-              <li class="has-subnav">
-                <a href="/editResume">
-                  <i class="fa fa-file fa-2x"></i>
-                  <span class="nav-text">Edit Resume</span>
-                </a>
-              </li>
-            </ul>
-            <ul class="logout">
-              <li>
-                <a href="/logout">
-                  <i class="fa fa-power-off fa-2x"></i>
-                  <span class="nav-text">Logout</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
+              <MenuList class="has-subnav">
+                <ButtonLink href="/editResume">
+                <Icon>
+                <i class="fa fa-file"></i>
+                </Icon>
+                  <NavText class="nav-text">Edit Resume</NavText>
+                </ButtonLink>
+              </MenuList>
+            </MenuListHolder>
+            <Logout class="logout">
+              <MenuList>
+                <ButtonLink href="/logout">
+                  <Icon>
+                  <i class="fa fa-power-off"></i>
+                  </Icon>
+                  <NavText class="nav-text">Logout</NavText>
+                </ButtonLink>
+              </MenuList>
+            </Logout>
+          </MainMenu>
     </div>
   );
 }
