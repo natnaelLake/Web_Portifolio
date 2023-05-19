@@ -12,6 +12,11 @@ export const DashContainer = styled.div`
   h1 {
     text-align: center;
   }
+  @media screen  and (max-width:768px){
+    /* margin-top: 100px; */
+    height: 100vh;
+    overflow-y: scroll;
+  }
 `;
 
 export const ListHolder = styled.ol`
@@ -24,6 +29,11 @@ export const ListHolder = styled.ol`
 
   list-style: none;
   counter-reset: stepnr;
+  @media screen  and (max-width:768px){
+    /* margin-bottom: 200px; */
+    height: 100vh;
+    /* overflow-y: scroll; */
+  }
 `;
 export const List = styled.li`
   :nth-child(6n + 1) {

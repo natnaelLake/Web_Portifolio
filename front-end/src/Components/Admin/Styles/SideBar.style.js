@@ -29,6 +29,7 @@ export const MainMenu = styled.nav`
     margin-left: 0px;
     width: 60px;
     overflow-x: hidden;
+    /* height: 100vh; */
  }
 `;
 export const MenuListHolder = styled.ul`

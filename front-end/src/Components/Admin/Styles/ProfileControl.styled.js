@@ -9,9 +9,9 @@ export const ProfileContainer = styled.div`
   font-family: "Source Sans Pro", sans-serif;
     margin: auto;
     @media screen and (max-width:768px) {
-    font-size: small;
+    /* font-size: small; */
     width:100vw;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
  }
     
 `;
@@ -24,7 +24,7 @@ export const Table = styled.div`
   border: 1px solid #eee;
   background-color: white;
   @media screen and (max-width:768px) {
-    font-size: small;
+    /* font-size: small; */
     overflow-x: scroll;
  }
 `;

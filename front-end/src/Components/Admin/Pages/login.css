@@ -1,14 +1,14 @@
-/* *,
+*,
 *:before,
 *:after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-} */
+}
 /* body{
     background-color: #080710;
 } */
-/* .background{
+.background{
     width: 430px;
     height: 520px;
     position: absolute;
@@ -119,4 +119,4 @@ button{
 }
 .social i{
   margin-right: 4px;
-} */
+}

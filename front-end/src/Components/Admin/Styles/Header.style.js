@@ -4,6 +4,11 @@ export const NavContianer = styled.div`
   width: 100%;
   margin: 0;
 `;
+export const Logo = styled.img`
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+`;
 export const NavBar = styled.ul`
   z-index: 1000;
   width: 95vw;
@@ -19,6 +24,12 @@ export const NavBar = styled.ul`
   margin-top: 1% !important;
   justify-content: space-between;
 `;
+export const Text = styled.p`
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 12px 16px;
+`
 export const Navs = styled.li`
   list-style: none;
   color: white;

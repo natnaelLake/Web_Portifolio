@@ -1,5 +1,4 @@
 import React from "react";
-import "./DsStyle.css";
 import { Card, CardDescr, CardTitle, DashContainer, List, ListHolder } from "../Styles/Dashboard.styled";
 
 export default function DashBoard() {

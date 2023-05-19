@@ -31,9 +31,10 @@ export const AddForm = styled.form`
     text-align: center;
   }
   @media screen and (max-width:768px) {
-    max-width: 200px;
+    width: 80%;
     margin-left: 30px;
     
+    height: fit-content;
   }
 `;
 
@@ -68,13 +69,15 @@ export const AddButton = styled.button`
   }
 `;
 export const AddContainer = styled.div`
-  /* justify-content: center; */
-  /* margin-top: 500px; */
   overflow: hidden;
   align-items: center;
-  width: 500px;
+  width: 80%;
   display: flex;
   flex-direction: row;
+  @media screen and (max-width:768px){
+    height: 100vh;
+    overflow-x: hidden;
+  }
 `;
 export const BackDiv = styled.div`
   margin-top:90px;
