@@ -15,6 +15,7 @@ export default function Routers() {
   return (
     <Routes>
       <Route path="/" element={<UserContainer />} />
+      <Route path="/login" element={<Login />} />
       {user === true ? (
         <>
           <Route path="/admin" element={<DashBoard />} />
@@ -23,7 +24,6 @@ export default function Routers() {
           <Route path="/editResume" element={<ResumeControl />} />
           <Route path="/logout" element={<Logout />} />
           <Route path="/dashboard" element={<DashBoard />} />
-          <Route path="/login" element={<Login />} />
           <Route path="/header" element={<Header />} />
         </>
       ) : null}
