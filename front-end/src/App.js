@@ -10,11 +10,12 @@ import Header from "./Components/Admin/Pages/Header";
 import SideBar from "./Components/Admin/Pages/SideBar";
 
 function App() {
+  const user = false
   return (
     <MainContainer>
       <Header />
       <BodyContainer>
-        <SideBar />
+        {user === true ? (<SideBar />):null}
         <RouteControl>
           <Routers />
         </RouteControl>
