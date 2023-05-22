@@ -30,10 +30,10 @@ export const AddForm = styled.form`
     line-height: 42px;
     text-align: center;
   }
-  @media screen and (max-width:768px) {
+  @media screen and (max-width: 768px) {
     width: 80%;
     margin-left: 30px;
-    
+
     height: fit-content;
   }
 `;
@@ -65,7 +65,7 @@ export const AddButton = styled.button`
   cursor: pointer;
   &:hover {
     background-color: palevioletred;
-        color: white;
+    color: white;
   }
 `;
 export const AddContainer = styled.div`
@@ -74,13 +74,13 @@ export const AddContainer = styled.div`
   width: 80%;
   display: flex;
   flex-direction: row;
-  @media screen and (max-width:768px){
+  @media screen and (max-width: 768px) {
     height: 100vh;
     overflow-x: hidden;
   }
 `;
 export const BackDiv = styled.div`
-  margin-top:90px;
+  margin-top: 90px;
   width: 430px;
   height: 520px;
   position: absolute;
@@ -98,7 +98,7 @@ export const Shape1 = styled.div`
   top: -80px;
 `;
 export const Shape2 = styled.div`
-margin-top: -100px;
+  margin-top: -100px;
   height: 200px;
   width: 200px;
   position: absolute;
@@ -107,23 +107,70 @@ margin-top: -100px;
   right: -30px;
   bottom: -80px;
 `;
-export const Resume =styled.div`
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-`
+export const Resume = styled.div`
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+`;
 
 export const UploadButton = styled.button`
-    font-size: 25px;
-    width:150px;
-    height: 80px;
-    margin: auto;
-    margin-left: 80px;
-    border-radius: 10px;
-    background-color:palevioletred; 
+  font-size: 25px;
+  width: 150px;
+  height: 80px;
+  margin: auto;
+  margin-left: 80px;
+  border-radius: 10px;
+  background-color: palevioletred;
+  color: white;
+  &:hover {
+    background-color: ${(props) => (props.$delete ? "red" : "green")};
     color: white;
-    &:hover{
-        background-color: ${(props => props.$delete ? 'red':'green')};
-        color: white;
-    }
+  }
+`;
+
+export const SocialMedia = styled.div`
+  margin-top: 30px;
+  display: flex;
+  div {
+  }
+`;
+export const FaceBook = styled.div`
+  margin-left: 25px;
+  background: blue;
+  width: 150px;
+  cursor: pointer;
+  border-radius: 30px;
+  padding: 5px 10px 10px 5px;
+  /* background-color: rgba(255,255,255,0.27); */
+  color: #eaf0fb;
+  a {
+    text-decoration: none;
+  }
+  text-align: center;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.47);
+  }
+  i {
+    margin-right: 4px;
+  }
+`;
+export const Google = styled.div`
+  background: red;
+  width: 150px;
+  border-radius: 30px;
+  padding: 5px 10px 10px 5px;
+  a {
+    text-decoration: none;
+  }
+  /* background-color: rgba(255,255,255,0.27); */
+  color: #eaf0fb;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.47);
+  }
+`;
+
+export const Button = styled.a`
+text-decoration: none;
 `

@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const User = require("../Models/Store");
-
+const Profile = require("../Models/Store");
+const User = require('../Models/User')
 const handleErrors = (err) => {
   const errors = {
     image: "",
@@ -8,7 +8,21 @@ const handleErrors = (err) => {
     title: "",
     link: "",
     usedTech: "",
+    email:'',
+    password:'',
   };
+  if (err.message === "Email Is Not Found.") {
+    errors.email = "Email Is Not Found.";
+  }
+  if (err.message === "Enter Email") {
+    errors.email = "Email Is Required";
+  }
+  if (err.message === "Enter Password") {
+    errors.password = "Password Is Required";
+  }
+  if (err.message === "Incorrect Password") {
+    errors.password = "Incorrect Password";
+  }
   if (err.code === 11000) {
     errors.error = "File Is Already Exists";
     return errors;
@@ -18,7 +32,41 @@ const handleErrors = (err) => {
       errors[porperties.path] = porperties.message;
     });
   }
+  return errors;
 };
+const Login = async (req,res)=>{
+  const {email,password} = req.body
+  console.log(req.body)
+  try {
+    const userData = await User.login(email,password)
+    console.log('userData',userData)
+    res.status(200).send(userData)
+  } catch (error) {
+    const errors = handleErrors(error);
+    console.log(errors)
+    res.status(400).send(errors);
+  }
+}
+const SignUp = async (req,res)=>{
+  console.log('body is',req.body)
+  const {
+    email,
+    password,
+  } = req.body;
+ 
+  try {
+    const user = await User.create({
+      email,
+      password,
+    });
+    console.log(user)
+    res.status(200).send(user);
+  } catch (error) {
+    console.log(error)
+    const errors = handleErrors(error);
+    res.status(400).send(errors);
+  }
+}
 const addData = async (req, res) => {
   // const image = req.file.filename;
   // console.log(image);
@@ -28,11 +76,11 @@ const addData = async (req, res) => {
   // }
   console.log(req.body)
   try {
-    const user = await User.create({
+    const Profile = await Profile.create({
       // image,
       ...req.body,
     });
-    res.status(200).send(user);
+    res.status(200).send(Profile);
   } catch (error) {
     const errors = handleErrors(error);
     res.status(400).send(errors);
@@ -40,8 +88,8 @@ const addData = async (req, res) => {
 };
 const getData = async (req, res) => {
   try {
-    const user = await User.find({});
-    res.status(200).send(user);
+    const Profile = await Profile.find({});
+    res.status(200).send(Profile);
   } catch (error) {
     const errors = handleErrors(error);
     res.status(400).send(errors);
@@ -50,7 +98,7 @@ const getData = async (req, res) => {
 const updateData = async (req, res) => {
   const { id } = req.params;
   try {
-    const updatedData = await User.findByIdAndUpdate(
+    const updatedData = await Profile.findByIdAndUpdate(
       { _id: id },
       {
         ...req.body,
@@ -66,7 +114,7 @@ const updateData = async (req, res) => {
 const deleteData = async (req, res) => {
   const { id } = req.params;
   try {
-    const deletedData = await User.findByIdAndUpdate(
+    const deletedData = await Profile.findByIdAndUpdate(
       { _id: id },
       {
         ...req.body,
@@ -80,4 +128,4 @@ const deleteData = async (req, res) => {
   }
 };
 
-module.exports = { addData, getData, updateData, deleteData };
+module.exports = { addData, getData, updateData, deleteData,Login,SignUp };

@@ -35,7 +35,12 @@ export const Navs = styled.li`
   color: white;
   font-family: sans-serif;
   font-weight: bold;
-  padding: 12px 16px;
+  padding: 0px 20px;
+  padding-bottom: 0px;
+  padding-top: 17px;
+  justify-content: center;
+  margin-top: 15px;
+  margin-right: 20px;
   /* margin: 0 8px; */
   position: relative;
   cursor: pointer;

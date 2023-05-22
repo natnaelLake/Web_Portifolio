@@ -22,4 +22,9 @@ const userData = mongoose.Schema({
     }
 },{timestamps:true})
 
+userData.statics.login = async function(email,password){
+    
+}
+
+
 module.exports = mongoose.model('Profile',userData);

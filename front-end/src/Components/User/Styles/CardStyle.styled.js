@@ -146,7 +146,7 @@ export const OrangeCard = styled.div`
   padding: 30px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 
   background-color: white;
   border-top: 3px solid hsl(34, 97%, 64%);
@@ -190,6 +190,7 @@ export const OrangeCard = styled.div`
   }
 `;
 export const ContainerTwo = styled.div`
+margin-bottom: 80px;
   @media (min-width: 950px) {
     display: flex;
     justify-content: center;
@@ -264,12 +265,12 @@ export const CardText = styled.div`
 export const P1 = styled.p`
   font-style: italic;
 `;
-export const CardTitle = styled.h2`
+export const CardTitle = styled.button`
   font-size: 2.2rem;
   margin-bottom: 20px;
   margin-top: 5px;
 `;
-export const CardPrice = styled.button`
+export const CardPrice = styled.a`
   width: 100px;
   height: 50px;
   background-color: palevioletred;

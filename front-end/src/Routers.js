@@ -9,14 +9,15 @@ import ResumeControl from "./Components/Admin/Pages/ResumeControl";
 import GetProfile from "./Components/Admin/Pages/GetProfile";
 import Login from "./Components/Admin/Pages/Login";
 import Header from "./Components/Admin/Pages/Header";
+import { useSelector } from "react-redux";
 
 export default function Routers() {
-  const user = false;
+  const user = useSelector((state)=>state.profile.user)
   return (
     <Routes>
       <Route path="/" element={<UserContainer />} />
       <Route path="/login" element={<Login />} />
-      {user === true ? (
+      {user !== null ? (
         <>
           <Route path="/admin" element={<DashBoard />} />
           <Route path="/addProfile" element={<AddProfile />} />

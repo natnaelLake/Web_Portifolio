@@ -15,116 +15,211 @@ import {
   P1,
   RedCard,
 } from "../Styles/CardStyle.styled";
-
+import { useNavigate } from "react-router-dom";
+import ImageOne from '../../../assets/Hotel Management.png'
+import ImageTwo from '../../../assets/E-learning.png'
+import imageFour from '../../../assets/Web Portfolio.png'
+import ImageThree from "../../../assets/Web Chat.png";
 export default function ProfileData() {
+  const navigate = useNavigate();
   return (
     <CardContainer>
       <ContainerOne>
         <CyanCard>
-          <h2>Supervisor</h2>
-          <p>Monitors activity to identify project roadblocks</p>
+          <h2>Hotel Management System</h2>
+          <p>
+            This the full react and front end system that can used for hotels
+            advetising page.
+          </p>
           <br />
           <br />
 
           <img
-            src="https://assets.codepen.io/2301174/icon-supervisor.svg"
-            alt=""
+            src={ImageOne}
+            alt="Hotel Management"
+            width='270px'
+            height='150px'
           />
           <br />
           <br />
           <P1>Used Technologies</P1>
           <li>
-            <a href="#">Link</a>
+            <a href="https://nodejs.org/en" target="_blanck">
+              ReactJs
+            </a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://legacy.reactjs.org/" target="_blanck">
+              NodeJs
+            </a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://getbootstrap.com/" target="_blanck">
+              Bootstrap
+            </a>
           </li>
-          <CardPrice class="card-price">View</CardPrice>
+          <CardPrice
+          target="_blanck"
+            href = "https://full-react-js-code.vercel.app/"
+          >
+            View
+          </CardPrice>
         </CyanCard>
 
         <RedCard>
-          <h2>Team Builder</h2>
+          <h2>E-learning Platform</h2>
           <p>
-            Scans our talent network to create the optimal team for your project
+            This an online e-learning platform for students and teachers that can give an opportunity to access videos, files and other info from teachers
           </p>
           <br />
           <br />
 
           <img
-            src="https://assets.codepen.io/2301174/icon-team-builder.svg"
-            alt=""
+            src={ImageTwo}
+            alt="Hotel Management"
+            width='270px'
+            height='150px'
           />
           <br />
           <br />
 
           <P1>Used Technologies</P1>
           <li>
-            <a href="#">Link</a>
+            <a href="https://nodejs.org/en" target="_blanck">
+              ReactJs
+            </a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://legacy.reactjs.org/" target="_blanck">
+              NodeJs
+            </a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://react-bootstrap.github.io/" target="_blanck">
+              React Bootstrap
+            </a>
           </li>
-          <CardPrice class="card-price">View</CardPrice>
+          <li>
+            <a href="https://expressjs.com/" target="_blanck">
+              Express Js
+            </a>
+          </li>
+          <li>
+            <a href="https://www.mongodb.com/" target="_blanck">
+              Mongodb
+            </a>
+          </li>
+          <CardPrice
+            href = "https://e-learning-web-app.onrender.com/"
+            target="_blanck"
+          >
+            View
+          </CardPrice>
         </RedCard>
 
         <BlueCard>
-          <h2>Calculator</h2>
+          <h2>Web Chat App</h2>
           <p>
-            Uses data from past projects to provide better delivery estimates
+            This A Chat app that is used to communication with group and individual.
           </p>
           <br />
           <br />
 
           <img
-            src="https://assets.codepen.io/2301174/icon-calculator.svg"
-            alt=" "
+            src={ImageThree}
+            alt="Hotel Management"
+            width='270px'
+            height='150px'
           />
           <br />
           <br />
 
           <P1>Used Technologies</P1>
           <li>
-            <a href="#">Link</a>
+            <a href="https://nodejs.org/en" target="_blanck">
+              ReactJs
+            </a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://legacy.reactjs.org/" target="_blanck">
+              NodeJs
+            </a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://getbootstrap.com/" target="_blanck">
+              Socket io
+            </a>
           </li>
-          <CardPrice class="card-price">View</CardPrice>
+          <li>
+            <a href="https://getbootstrap.com/" target="_blanck">
+              Material Ui
+            </a>
+          </li>
+          <li>
+            <a href="https://getbootstrap.com/" target="_blanck">
+              Express Js
+            </a>
+          </li>
+          <li>
+            <a href="https://getbootstrap.com/" target="_blanck">
+              Mongodb
+            </a>
+          </li>
+          <CardPrice
+            href = "https://web-chat-application.onrender.com/"
+            target="_blanck"
+          >
+            View
+          </CardPrice>
         </BlueCard>
       </ContainerOne>
       <ContainerTwo>
         <OrangeCard>
-          <h2>Karma</h2>
-          <p>Regularly evaluates our talent to ensure quality</p>
+          <h2>Web Portfolio</h2>
+          <p>This website is the web which is used to introduce our self and our documentation for any Tech based companies.</p>
           <br />
           <br />
-          <img src="https://assets.codepen.io/2301174/icon-karma.svg" alt="" />
+          <img
+            src={imageFour}
+            alt="Hotel Management"
+            width='270px'
+            height='150px'
+          />
           <br />
           <br />
 
           <P1>Used Technologies</P1>
           <li>
-            <a href="#">Link</a>
+            <a href="https://nodejs.org/en" target="_blanck">
+              ReactJs
+            </a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://legacy.reactjs.org/" target="_blanck">
+              NodeJs
+            </a>
           </li>
           <li>
-            <a href="#">Link</a>
+            <a href="https://emotion.sh/docs/introduction" target="_blanck">
+              Emotion
+            </a>
           </li>
-          <CardPrice class="card-price">View</CardPrice>
+          <li>
+            <a href="https://getbootstrap.com/" target="_blanck">
+              Express Js
+            </a>
+          </li>
+          <li>
+            <a href="https://getbootstrap.com/" target="_blanck">
+              Mongo Db
+            </a>
+          </li>
+          <CardPrice href = 'https://my-web-portifolio.onrender.com' target="_blanck">
+            View
+          </CardPrice>
         </OrangeCard>
       </ContainerTwo>
-      <CardHeader id="header">
+      {/* <CardHeader id="header">
         <h1>La Saveur</h1>
         <p>The Traditional Fench Taste</p>
       </CardHeader>
@@ -144,16 +239,26 @@ export default function ProfileData() {
 
             <P1>Used Technologies</P1>
             <li>
-              <a href="#">Link</a>
+              <a href="https://nodejs.org/en" target="_blanck">
+                ReactJs
+              </a>
             </li>
             <li>
-              <a href="#">Link</a>
+              <a href="https://legacy.reactjs.org/" target="_blanck">
+                NodeJs
+              </a>
             </li>
             <li>
-              <a href="#">Link</a>
+              <a href="https://getbootstrap.com/" target="_blanck">
+                Bootstrap
+              </a>
             </li>
           </CardText>
-          <CardPrice class="card-price">View</CardPrice>
+          <CardPrice
+            onClick={navigate("https://full-react-js-code.vercel.app/")}
+          >
+            View
+          </CardPrice>
         </Card>
         <Card class="card">
           <CardImage class="card-image">
@@ -170,16 +275,26 @@ export default function ProfileData() {
 
             <P1>Used Technologies</P1>
             <li>
-              <a href="#">Link</a>
+              <a href="https://nodejs.org/en" target="_blanck">
+                ReactJs
+              </a>
             </li>
             <li>
-              <a href="#">Link</a>
+              <a href="https://legacy.reactjs.org/" target="_blanck">
+                NodeJs
+              </a>
             </li>
             <li>
-              <a href="#">Link</a>
+              <a href="https://getbootstrap.com/" target="_blanck">
+                Bootstrap
+              </a>
             </li>
           </CardText>
-          <CardPrice class="card-price">View</CardPrice>
+          <CardPrice
+            onClick={navigate("https://full-react-js-code.vercel.app/")}
+          >
+            View
+          </CardPrice>
         </Card>
         <Card class="card">
           <CardImage class="card-image">
@@ -196,16 +311,26 @@ export default function ProfileData() {
 
             <P1>Used Technologies</P1>
             <li>
-              <a href="#">Link</a>
+              <a href="https://nodejs.org/en" target="_blanck">
+                ReactJs
+              </a>
             </li>
             <li>
-              <a href="#">Link</a>
+              <a href="https://legacy.reactjs.org/" target="_blanck">
+                NodeJs
+              </a>
             </li>
             <li>
-              <a href="#">Link</a>
+              <a href="https://getbootstrap.com/" target="_blanck">
+                Bootstrap
+              </a>
             </li>
           </CardText>
-          <CardPrice class="card-price">View</CardPrice>
+          <CardPrice
+            onClick={navigate("https://full-react-js-code.vercel.app/")}
+          >
+            View
+          </CardPrice>
         </Card>
         <Card class="card">
           <CardImage class="card-image">
@@ -221,16 +346,26 @@ export default function ProfileData() {
 
             <P1>Used Technologies</P1>
             <li>
-              <a href="#">Link</a>
+              <a href="https://nodejs.org/en" target="_blanck">
+                ReactJs
+              </a>
             </li>
             <li>
-              <a href="#">Link</a>
+              <a href="https://legacy.reactjs.org/" target="_blanck">
+                NodeJs
+              </a>
             </li>
             <li>
-              <a href="#">Link</a>
+              <a href="https://getbootstrap.com/" target="_blanck">
+                Bootstrap
+              </a>
             </li>
           </CardText>
-          <CardPrice class="card-price">View</CardPrice>
+          <CardPrice
+            onClick={navigate("https://full-react-js-code.vercel.app/")}
+          >
+            View
+          </CardPrice>
         </Card>
         <Card class="card">
           <CardImage class="card-image">
@@ -245,18 +380,28 @@ export default function ProfileData() {
             <br />
             <P1>Used Technologies</P1>
             <li>
-              <a href="#">Link</a>
+              <a href="https://nodejs.org/en" target="_blanck">
+                ReactJs
+              </a>
             </li>
             <li>
-              <a href="#">Link</a>
+              <a href="https://legacy.reactjs.org/" target="_blanck">
+                NodeJs
+              </a>
             </li>
             <li>
-              <a href="#">Link</a>
+              <a href="https://getbootstrap.com/" target="_blanck">
+                Bootstrap
+              </a>
             </li>
           </CardText>
-          <CardPrice class="card-price">View</CardPrice>
-        </Card>
-      </CardListContainer>
+          <CardPrice
+            onClick={navigate("https://full-react-js-code.vercel.app/")}
+          >
+            View
+          </CardPrice>
+        </Card> */}
+      {/* </CardListContainer> */}
     </CardContainer>
   );
 }

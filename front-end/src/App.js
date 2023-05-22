@@ -8,14 +8,15 @@ import {
 } from "./Components/Admin/Styles/Container.styled";
 import Header from "./Components/Admin/Pages/Header";
 import SideBar from "./Components/Admin/Pages/SideBar";
+import { useSelector } from "react-redux";
 
 function App() {
-  const user = false
+  const user = useSelector(state=>state.profile.user)
   return (
     <MainContainer>
       <Header />
       <BodyContainer>
-        {user === true ? (<SideBar />):null}
+        {user !== null ? (<SideBar />):null}
         <RouteControl>
           <Routers />
         </RouteControl>
