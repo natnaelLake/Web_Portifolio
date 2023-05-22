@@ -76,22 +76,25 @@ const addData = async (req, res) => {
   // }
   console.log(req.body)
   try {
-    const Profile = await Profile.create({
+    const profileData = await Profile.create({
       // image,
       ...req.body,
     });
-    res.status(200).send(Profile);
+    res.status(200).send(profileData);
   } catch (error) {
     const errors = handleErrors(error);
+    console.log(error)
     res.status(400).send(errors);
   }
 };
 const getData = async (req, res) => {
+  console.log('get data route')
   try {
-    const Profile = await Profile.find({});
-    res.status(200).send(Profile);
+    const profileData = await Profile.find({});
+    res.status(200).send(profileData);
   } catch (error) {
     const errors = handleErrors(error);
+    console.log(error)
     res.status(400).send(errors);
   }
 };
