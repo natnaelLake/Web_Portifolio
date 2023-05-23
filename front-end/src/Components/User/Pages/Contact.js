@@ -63,7 +63,7 @@ export default function Contact() {
                     </a>
                   </li>
                   <li>
-                    <a href="" target="_blanck">
+                    <a href="https://www.facebook.com/bewuketu.lake.73" target="_blanck">
                       <AiFillFacebook />
                     </a>
                   </li>
