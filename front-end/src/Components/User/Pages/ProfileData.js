@@ -44,22 +44,22 @@ export default function ProfileData() {
           <br />
           <P1>Used Technologies</P1>
           <li>
-            <a href="https://nodejs.org/en" target="_blanck">
+            <a href="https://nodejs.org/en" target="_blank">
               ReactJs
             </a>
           </li>
           <li>
-            <a href="https://legacy.reactjs.org/" target="_blanck">
+            <a href="https://legacy.reactjs.org/" target="_blank">
               NodeJs
             </a>
           </li>
           <li>
-            <a href="https://getbootstrap.com/" target="_blanck">
+            <a href="https://getbootstrap.com/" target="_blank">
               Bootstrap
             </a>
           </li>
           <CardPrice
-          target="_blanck"
+          target="_blank"
             href = "https://full-react-js-code.vercel.app/"
           >
             View
@@ -85,33 +85,33 @@ export default function ProfileData() {
 
           <P1>Used Technologies</P1>
           <li>
-            <a href="https://nodejs.org/en" target="_blanck">
+            <a href="https://nodejs.org/en" target="_blank">
               ReactJs
             </a>
           </li>
           <li>
-            <a href="https://legacy.reactjs.org/" target="_blanck">
+            <a href="https://legacy.reactjs.org/" target="_blank">
               NodeJs
             </a>
           </li>
           <li>
-            <a href="https://react-bootstrap.github.io/" target="_blanck">
+            <a href="https://react-bootstrap.github.io/" target="_blank">
               React Bootstrap
             </a>
           </li>
           <li>
-            <a href="https://expressjs.com/" target="_blanck">
+            <a href="https://expressjs.com/" target="_blank">
               Express Js
             </a>
           </li>
           <li>
-            <a href="https://www.mongodb.com/" target="_blanck">
+            <a href="https://www.mongodb.com/" target="_blank">
               Mongodb
             </a>
           </li>
           <CardPrice
             href = "https://e-learning-web-app.onrender.com/"
-            target="_blanck"
+            target="_blank"
           >
             View
           </CardPrice>
@@ -136,38 +136,38 @@ export default function ProfileData() {
 
           <P1>Used Technologies</P1>
           <li>
-            <a href="https://nodejs.org/en" target="_blanck">
+            <a href="https://nodejs.org/en" target="_blank">
               ReactJs
             </a>
           </li>
           <li>
-            <a href="https://legacy.reactjs.org/" target="_blanck">
+            <a href="https://legacy.reactjs.org/" target="_blank">
               NodeJs
             </a>
           </li>
           <li>
-            <a href="https://getbootstrap.com/" target="_blanck">
+            <a href="https://getbootstrap.com/" target="_blank">
               Socket io
             </a>
           </li>
           <li>
-            <a href="https://getbootstrap.com/" target="_blanck">
+            <a href="https://getbootstrap.com/" target="_blank">
               Material Ui
             </a>
           </li>
           <li>
-            <a href="https://getbootstrap.com/" target="_blanck">
+            <a href="https://getbootstrap.com/" target="_blank">
               Express Js
             </a>
           </li>
           <li>
-            <a href="https://getbootstrap.com/" target="_blanck">
+            <a href="https://getbootstrap.com/" target="_blank">
               Mongodb
             </a>
           </li>
           <CardPrice
             href = "https://web-chat-application.onrender.com/"
-            target="_blanck"
+            target="_blank"
           >
             View
           </CardPrice>
@@ -190,31 +190,31 @@ export default function ProfileData() {
 
           <P1>Used Technologies</P1>
           <li>
-            <a href="https://nodejs.org/en" target="_blanck">
+            <a href="https://nodejs.org/en" target="_blank">
               ReactJs
             </a>
           </li>
           <li>
-            <a href="https://legacy.reactjs.org/" target="_blanck">
+            <a href="https://legacy.reactjs.org/" target="_blank">
               NodeJs
             </a>
           </li>
           <li>
-            <a href="https://emotion.sh/docs/introduction" target="_blanck">
+            <a href="https://emotion.sh/docs/introduction" target="_blank">
               Emotion
             </a>
           </li>
           <li>
-            <a href="https://getbootstrap.com/" target="_blanck">
+            <a href="https://getbootstrap.com/" target="_blank">
               Express Js
             </a>
           </li>
           <li>
-            <a href="https://getbootstrap.com/" target="_blanck">
+            <a href="https://getbootstrap.com/" target="_blank">
               Mongo Db
             </a>
           </li>
-          <CardPrice href = 'https://my-web-portifolio.onrender.com' target="_blanck">
+          <CardPrice href = 'https://my-web-portifolio.onrender.com' target="_blank">
             View
           </CardPrice>
         </OrangeCard>
@@ -239,17 +239,17 @@ export default function ProfileData() {
 
             <P1>Used Technologies</P1>
             <li>
-              <a href="https://nodejs.org/en" target="_blanck">
+              <a href="https://nodejs.org/en" target="_blank">
                 ReactJs
               </a>
             </li>
             <li>
-              <a href="https://legacy.reactjs.org/" target="_blanck">
+              <a href="https://legacy.reactjs.org/" target="_blank">
                 NodeJs
               </a>
             </li>
             <li>
-              <a href="https://getbootstrap.com/" target="_blanck">
+              <a href="https://getbootstrap.com/" target="_blank">
                 Bootstrap
               </a>
             </li>
@@ -275,17 +275,17 @@ export default function ProfileData() {
 
             <P1>Used Technologies</P1>
             <li>
-              <a href="https://nodejs.org/en" target="_blanck">
+              <a href="https://nodejs.org/en" target="_blank">
                 ReactJs
               </a>
             </li>
             <li>
-              <a href="https://legacy.reactjs.org/" target="_blanck">
+              <a href="https://legacy.reactjs.org/" target="_blank">
                 NodeJs
               </a>
             </li>
             <li>
-              <a href="https://getbootstrap.com/" target="_blanck">
+              <a href="https://getbootstrap.com/" target="_blank">
                 Bootstrap
               </a>
             </li>
@@ -311,17 +311,17 @@ export default function ProfileData() {
 
             <P1>Used Technologies</P1>
             <li>
-              <a href="https://nodejs.org/en" target="_blanck">
+              <a href="https://nodejs.org/en" target="_blank">
                 ReactJs
               </a>
             </li>
             <li>
-              <a href="https://legacy.reactjs.org/" target="_blanck">
+              <a href="https://legacy.reactjs.org/" target="_blank">
                 NodeJs
               </a>
             </li>
             <li>
-              <a href="https://getbootstrap.com/" target="_blanck">
+              <a href="https://getbootstrap.com/" target="_blank">
                 Bootstrap
               </a>
             </li>
@@ -346,17 +346,17 @@ export default function ProfileData() {
 
             <P1>Used Technologies</P1>
             <li>
-              <a href="https://nodejs.org/en" target="_blanck">
+              <a href="https://nodejs.org/en" target="_blank">
                 ReactJs
               </a>
             </li>
             <li>
-              <a href="https://legacy.reactjs.org/" target="_blanck">
+              <a href="https://legacy.reactjs.org/" target="_blank">
                 NodeJs
               </a>
             </li>
             <li>
-              <a href="https://getbootstrap.com/" target="_blanck">
+              <a href="https://getbootstrap.com/" target="_blank">
                 Bootstrap
               </a>
             </li>
@@ -380,17 +380,17 @@ export default function ProfileData() {
             <br />
             <P1>Used Technologies</P1>
             <li>
-              <a href="https://nodejs.org/en" target="_blanck">
+              <a href="https://nodejs.org/en" target="_blank">
                 ReactJs
               </a>
             </li>
             <li>
-              <a href="https://legacy.reactjs.org/" target="_blanck">
+              <a href="https://legacy.reactjs.org/" target="_blank">
                 NodeJs
               </a>
             </li>
             <li>
-              <a href="https://getbootstrap.com/" target="_blanck">
+              <a href="https://getbootstrap.com/" target="_blank">
                 Bootstrap
               </a>
             </li>

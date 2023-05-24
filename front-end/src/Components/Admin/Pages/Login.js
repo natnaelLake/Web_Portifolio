@@ -76,7 +76,7 @@ export default function Login() {
           Login
         </AddButton>
         <SocialMedia class="social">
-          <Button href="https://accounts.google.com/">
+          <Button href="https://accounts.google.com/" >
             <Google class="go">
               <i class="fa fa-google"></i> Google
             </Google>

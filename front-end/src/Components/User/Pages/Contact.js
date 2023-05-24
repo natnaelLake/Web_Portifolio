@@ -45,30 +45,30 @@ export default function Contact() {
                 </List>
                 <SocilaMedia>
                   <li>
-                    <a href="https://github.com/natnaelLake" target="_blanck">
+                    <a href="https://github.com/natnaelLake" target="_blank">
                       <AiFillGithub />
                     </a>
                   </li>
                   <li>
-                    <a href="https://t.me/Nati_L_man" target="_blanck">
+                    <a href="https://t.me/Nati_L_man" target="_blank">
                       <BsTelegram />
                     </a>
                   </li>
                   <li>
                     <a
                       href="https://www.linkedin.com/in/bewuketu-lake-471524228/"
-                      target="_blanck"
+                      target="_blank"
                     >
                       <AiFillLinkedin />
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.facebook.com/bewuketu.lake.73" target="_blanck">
+                    <a href="https://www.facebook.com/bewuketu.lake.73" target="_blank">
                       <AiFillFacebook />
                     </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/BewuketuNat" target="_blanck">
+                    <a href="https://twitter.com/BewuketuNat" target="_blank">
                       <AiFillTwitterCircle />
                     </a>
                   </li>
