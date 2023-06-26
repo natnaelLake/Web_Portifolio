@@ -16,7 +16,7 @@ import {
   RedCard,
 } from "../Styles/CardStyle.styled";
 import { useNavigate } from "react-router-dom";
-import ImageOne from '../../../assets/Hotel Management.png'
+import ImageOne from '../../../assets/Screenshot from 2023-06-26 13-46-15.png'
 import ImageTwo from '../../../assets/E-learning.png'
 import imageFour from '../../../assets/Web Portfolio.png'
 import ImageThree from "../../../assets/Web Chat.png";
