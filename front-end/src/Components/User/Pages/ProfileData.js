@@ -26,10 +26,9 @@ export default function ProfileData() {
     <CardContainer>
       <ContainerOne>
         <CyanCard>
-          <h2>Hotel Management System</h2>
+          <h2>Song Player</h2>
           <p>
-            This the full react and front end system that can used for hotels
-            advetising page.
+            This is Song player website with a CURD operation in it.
           </p>
           <br />
           <br />
@@ -60,7 +59,7 @@ export default function ProfileData() {
           </li>
           <CardPrice
           target="_blank"
-            href = "https://full-react-js-code.vercel.app/"
+            href = "https://addis-software-intern-program-ms2l.vercel.app/"
           >
             View
           </CardPrice>
