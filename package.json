@@ -9,8 +9,6 @@
     "start-server":"cd back-end && node ./bin/www",
     "build-client":"cd front-end && npm run build",
     "start-client":"cd front-end && npm run start"
-
-
   },
   "author": "",
   "license": "ISC"
