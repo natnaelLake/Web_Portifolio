@@ -13,13 +13,13 @@ import {
   CyanCard,
   OrangeCard,
   P1,
-  RedCard,
+  RedCard
 } from "../Styles/CardStyle.styled";
 import { useNavigate } from "react-router-dom";
-import ImageOne from '../../../assets/Screenshot from 2023-06-26 13-46-15.png'
-import ImageTwo from '../../../assets/E-learning.png'
-import imageFour from '../../../assets/Web Portfolio.png'
-import ImageThree from "../../../assets/Web Chat.png";
+import ImageOne from "../../../assets/Screenshot from 2023-06-26 13-46-15.png";
+import ImageTwo from "../../../assets/E-learning.png";
+import imageFour from "../../../assets/Web Portfolio.png";
+import ImageThree from "../../../assets/Screenshot from 2023-10-18 22-12-43.png";
 export default function ProfileData() {
   const navigate = useNavigate();
   return (
@@ -27,17 +27,15 @@ export default function ProfileData() {
       <ContainerOne>
         <CyanCard>
           <h2>Song Player</h2>
-          <p>
-            This is Song player website with a CURD operation in it.
-          </p>
+          <p>This is Song player website with a CURD operation in it.</p>
           <br />
           <br />
 
           <img
             src={ImageOne}
             alt="Hotel Management"
-            width='270px'
-            height='150px'
+            width="270px"
+            height="150px"
           />
           <br />
           <br />
@@ -58,8 +56,8 @@ export default function ProfileData() {
             </a>
           </li>
           <CardPrice
-          target="_blank"
-            href = "https://addis-software-intern-program-ms2l.vercel.app/"
+            target="_blank"
+            href="https://addis-software-intern-program-ms2l.vercel.app/"
           >
             View
           </CardPrice>
@@ -68,7 +66,9 @@ export default function ProfileData() {
         <RedCard>
           <h2>E-learning Platform</h2>
           <p>
-            This an online e-learning platform for students and teachers that can give an opportunity to access videos, files and other info from teachers
+            This an online e-learning platform for students and teachers that
+            can give an opportunity to access videos, files and other info from
+            teachers
           </p>
           <br />
           <br />
@@ -76,8 +76,8 @@ export default function ProfileData() {
           <img
             src={ImageTwo}
             alt="Hotel Management"
-            width='270px'
-            height='150px'
+            width="270px"
+            height="150px"
           />
           <br />
           <br />
@@ -109,7 +109,7 @@ export default function ProfileData() {
             </a>
           </li>
           <CardPrice
-            href = "https://e-learning-web-app.onrender.com/"
+            href="https://e-learning-web-app.onrender.com/"
             target="_blank"
           >
             View
@@ -119,7 +119,8 @@ export default function ProfileData() {
         <BlueCard>
           <h2>Web Chat App</h2>
           <p>
-            This A Chat app that is used to communication with group and individual.
+            This A Chat app that is used to communication with group and
+            individual.
           </p>
           <br />
           <br />
@@ -127,8 +128,8 @@ export default function ProfileData() {
           <img
             src={ImageThree}
             alt="Hotel Management"
-            width='270px'
-            height='150px'
+            width="270px"
+            height="150px"
           />
           <br />
           <br />
@@ -165,7 +166,7 @@ export default function ProfileData() {
             </a>
           </li>
           <CardPrice
-            href = "https://web-chat-application.onrender.com/"
+            href="https://web-chat-application.onrender.com/"
             target="_blank"
           >
             View
@@ -174,15 +175,19 @@ export default function ProfileData() {
       </ContainerOne>
       <ContainerTwo>
         <OrangeCard>
-          <h2>Web Portfolio</h2>
-          <p>This website is the web which is used to introduce our self and our documentation for any Tech based companies.</p>
+          <h2>Banks Ethiopia</h2>
+          <p>
+            Banks Ethiopia is addis software Intern Project that can be manage
+            the bank loan request from different part of the world to ethiopian
+            banks based on clients will.
+          </p>
           <br />
           <br />
           <img
             src={imageFour}
             alt="Hotel Management"
-            width='270px'
-            height='150px'
+            width="270px"
+            height="150px"
           />
           <br />
           <br />
@@ -213,7 +218,7 @@ export default function ProfileData() {
               Mongo Db
             </a>
           </li>
-          <CardPrice href = 'https://my-web-portifolio.onrender.com' target="_blank">
+          <CardPrice href="https://banksethiopia.com/" target="_blank">
             View
           </CardPrice>
         </OrangeCard>
