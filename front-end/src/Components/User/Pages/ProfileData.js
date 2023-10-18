@@ -30,7 +30,6 @@ export default function ProfileData() {
           <p>This is Song player website with a CURD operation in it.</p>
           <br />
           <br />
-
           <img
             src={ImageOne}
             alt="Hotel Management"
